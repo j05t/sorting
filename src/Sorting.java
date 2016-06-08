@@ -1,10 +1,12 @@
+package mySort;
+
 import java.util.Arrays;
 
 public class Sort {
 
 	public static void main(String[] args) {
 
-		int[] array = { 2, 13, 43, 23, 1, 23, 11, 8, 7 };
+		int[] array = { 2, 13, 43, 23, 1, 5, 21, 11, 8, 7 };
 
 		System.out.println("unsorted array:");
 		System.out.println(Arrays.toString(array));
@@ -16,7 +18,8 @@ public class Sort {
 
 		// Quicksort runs in O(n log n)
 		quickSort(array, 0, array.length - 1);
-
+		
+		System.out.println("sorted array:");
 		System.out.println(Arrays.toString(array));
 
 		// Linear search works in O(n)
